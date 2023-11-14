@@ -1,13 +1,17 @@
-float problemSolution1(float consumed_water) {
-    float cost;
-    // write your code here
-    if (consumed_water<=30){
-        cost= (consumed_water*0.4) +13;}
-    if (consumed_water>30 and consumed_water<=50){
-        cost= (consumed_water-30)*0.12 + 12 +13;}
-    if (consumed_water>50 and consumed_water<=60){
-        cost = (consumed_water -50)*1.4+ 12 + 24+13;}
-    if (consumed_water>60){
-        cost= (consumed_water-60)*1.5 + 14 +24 +12+13;}
-    return cost;
+
+std:: string problemSolution3(float height, char S){
+
+    if (S=='M')
+    {if ( height<1.7){return "Short"; }
+    else if (height >= 1.7 and height<1.85)
+    {return "Normal";}
+    else {return "Tall";}
+    }
+    else if (S=='W')
+    { if ( height<1.6)
+    {return "Short"; }
+    else if (height >= 1.6 and height<1.75)
+    {return "Normal";}
+    else {return "Tall";}
+    }
 }

@@ -1,23 +1,28 @@
+#include <iostream>
 float problemSolution5(float x, float y, char operation) {
-   float result;
-   switch (result) {
+    float result;
+    switch (operation) {
         case '+':
-            return x + y;
+            result = x + y;
+            break;
         case '-':
-            return x - y;
+            result = x - y;
+            break;
         case '*':
-            return x * y;
+            result = x * y;
+            break;
         case '/':
             if (y != 0) {
-                return x / y;
+                result = x / y;
             } else {
-                cout << "Error: Division by zero!" << endl;
-                return 0;
+                std::cerr << "Error: Division by zero!" << std::endl;
+                result = 0.0;
             }
+            break;
         default:
-            cout << "Error: Invalid operation!" << endl;
+            std:: cerr << "Does not work with this one! " << std::endl;
+            result = 0.0;
+            break;
     }
-
-
-   return result;
-}
+    return result;
+}}
