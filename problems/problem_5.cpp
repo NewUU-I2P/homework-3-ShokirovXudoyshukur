@@ -1,9 +1,6 @@
 float problemSolution5(float x, float y, char operation) {
    float result;
-   cin >> x;
-   cin >> y;
-   cin >> operation;
-    switch (result) {
+   switch (result) {
         case '+':
             return x + y;
         case '-':
@@ -20,7 +17,6 @@ float problemSolution5(float x, float y, char operation) {
         default:
             cout << "Error: Invalid operation!" << endl;
     }
-    cout << "Result: " << result;
 
 
    return result;
